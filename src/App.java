@@ -2,6 +2,17 @@ public class App
  {
     public static void main(String[] args) throws Exception
     {
+        //sort();
+
+        Calculator calc = new Calculator();
+        calc.add(12.5);
+        calc.add(15.2);
+        calc.add(4.25);
+        calc.showValues();
+    }
+
+    public static void sort()
+    {
         double[] unsortedarr = {12, 1, 9, 3, 2, 5, 8, 4, 10};
         System.out.println("Unsortiertes Array:");
         for(int i = 0; i < unsortedarr.length; i++)
@@ -12,9 +23,6 @@ public class App
         System.out.println("Sortiertes Array:");
         for(int i = 0; i < unsortedarr.length; i++)
             System.out.println(unsortedarr[i]);
-
-        Calculator calc = new Calculator();
-        calc.add(12.5);
     }
 
     public static void bubbleSort(double[] arr)

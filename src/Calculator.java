@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Calculator 
 {
-    List<Double> list;
+    private List<Double> list;
 
     public Calculator()
     {
@@ -12,6 +12,14 @@ public class Calculator
  
     public void add(double aValue)
     {
-        list.add(list.size() - 1, aValue);
+        list.add(list.size(), aValue);
+    }
+
+    public void showValues()
+    {
+        for(int i = 0; i < list.size(); i ++) 
+        {
+            System.out.println(list.get(i));
+        }
     }
 }
