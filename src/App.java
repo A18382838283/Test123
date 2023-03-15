@@ -12,6 +12,9 @@ public class App
         System.out.println("Sortiertes Array:");
         for(int i = 0; i < unsortedarr.length; i++)
             System.out.println(unsortedarr[i]);
+
+        Calculator calc = new Calculator();
+        calc.add(12.5);
     }
 
     public static void bubbleSort(double[] arr)
