@@ -20,18 +20,13 @@ public class App
         char[] passwort = new char[32];
         passwort = System.console().readPassword();
 
-        JComboBox box = new JComboBox<>();
-        box.setVisible(true);
-        box.setSize(120,453);
-
         JLabel label = new JLabel("Sergej");
         label.setVisible(true);
-        label.setSize(200,100);
+        label.setSize(200,50);
 
         JFrame fenster = new JFrame("Sergej");
         fenster.setSize(1000, 1000);
         fenster.setVisible(true);
-        fenster.add(box);
         fenster.add(label);
 
 
